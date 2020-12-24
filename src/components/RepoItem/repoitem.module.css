@@ -1,0 +1,46 @@
+.repo {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid var(--mainGray);
+	padding: 1.7rem;
+	max-width: 100%;
+}
+
+.repo:hover {
+	background-color: var(--mainGray);
+}
+
+.repoInfo {
+	display: flex;
+	flex-direction: row;
+	width: 57rem;
+}
+
+.titleContainer {
+	width: 50%;
+}
+
+.title {
+	text-decoration: none;
+	font-size: 1.6rem;
+	padding: 0.9rem 0;
+	color: var(--mainBlue);
+	line-height: 2rem;
+}
+
+.data {
+	font-size: 1.4rem;
+	padding: 0.7rem 1.5rem;
+	border-radius: 0.5rem;
+	margin-right: 1.5rem;
+	box-shadow: 0 0 6px var(--mainBlack);
+}
+
+@media screen and (max-width: 430px) {
+	.repo {
+		flex-direction: column;
+	}	
+	.repoInfo {
+		margin-top: 2rem;
+	}
+}

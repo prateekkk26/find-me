@@ -1,0 +1,69 @@
+.userItem {
+	padding: 2rem;
+	border-radius: 0.5rem;
+	/*border: 1px solid var(--mainGray);*/
+	margin-right: 2rem;
+	width: 25%;
+	box-shadow: 0 0 4px var(--mainBlack);
+	margin-bottom: 2rem;
+	background-color: var(--mainBlack);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.userItem:hover {
+	opacity: 0.9;
+}
+
+.imageContainer {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.image {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	box-shadow: 0 0 8px var(--mainWhite);
+}
+
+.container h3 {
+	display: block;
+	font-size: 2rem;
+	padding: 1.5rem;
+	text-align: center;
+	background-color: var(--mainBlue);
+	color: var(--mainWhite);
+	margin-top: 1rem;
+}
+
+.link {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-size: 2rem;
+	color: var(--mainBlack);
+	background-color: var(--mainGreen);
+	padding: 1.5rem;
+}
+
+.link:hover {
+	opacity: 0.8;
+}
+
+@media screen and (min-width: 431px) and (max-width: 640px) {
+	.userItem {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.userItem {
+		width: 80%;
+		margin-right: 0;
+	}
+}

@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+	--mainWhite: rgb(255,255,255);
+	--mainBlack: rgb(0,0,0);
+	--mainBlue: rgb(9,132,227);
+	--mainRed: rgb(214,48,49);
+	--mainGreen: rgb(0,184,148);
+	--mainGray: rgb(223,230,233);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+html, body {
+	font-family: 'EB Garamond', serif;
+	line-height: 1.2rem;
+	font-size: 10px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Abril Fatface', cursive;
+}
+
+.textWhite {
+	color: var(--mainWhite);
+}
+
+.bgGreen {
+	background-color: var(--mainGreen);
+}
+
+.bgWhite {
+	background-color: var(--mainWhite);
+}
+
+.bgBlack {
+	background-color: var(--mainBlack);
+}
+
+.bgRed {
+	background-color: var(--mainRed);
+}
+
+.bgGray {
+	background-color: var(--mainGray);
+}
+
+.bgBlue {
+	background-color: var(--mainBlue);
+}
+
+@media screen and (min-width: 1008px) {
+	html,
+	body {
+		font-size: 8px;
+	}
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+	html,
+	body {
+		font-size: 7px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	html,
+	body {
+		font-size: 6.5px;
+	}
 }

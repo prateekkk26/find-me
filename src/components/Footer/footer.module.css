@@ -1,0 +1,13 @@
+footer {
+	background-color: var(--mainBlack);
+	color: var(--mainBlue);
+	padding: 2rem;
+	text-align: center;
+	width: 100%;
+}
+
+.container {
+	max-width: 114rem;
+	margin: 0 auto;
+	font-size: 1.5rem;
+}

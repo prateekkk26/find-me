@@ -1,26 +1,50 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import User from './components/User/User'
+import Alert from './components/Alert/Alert'
+import Home from './components/Home/Home'
+import NotFound from './components/NotFound/NotFound'
+import GithubState from './context/github/GithubState';
+import AlertState from './context/alert/AlertState';
+const App = () => {
+
+
+  // async componentDidMount() {
+  //   this.setState({
+  //     loading: true
+  //   });
+
+  //   const res = await axios.get(`https://api.github.com/users?client_id=$
+  //     {process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=$
+  //     {process.env.REACT_APP_GITHUB_CLIENT_SECRET}`);
+  
+  //   this.setState({
+  //     users: res.data,
+  //     loading: false
+  //   });
+  // }
+
+
+  return(
+    <GithubState>
+      <AlertState>
+        <BrowserRouter>
+          <div className="background">
+            <div className="app">
+              <Alert />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/user/:login" component={User} />
+                <Route component={NotFound} />
+              </Switch>
+            </div>
+          </div>
+        </BrowserRouter>
+      </AlertState>
+    </GithubState>
+  )
 }
 
 export default App;

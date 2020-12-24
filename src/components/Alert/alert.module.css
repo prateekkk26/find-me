@@ -1,0 +1,16 @@
+.alert {
+	display: block;
+	padding: 1.5rem;
+	background-color: var(--mainRed);
+	color: var(--mainBlack);
+	font-size: 1.4rem;
+}
+
+.container {
+	width: 114rem;
+	margin: 0 auto;
+}
+
+i {
+	margin-right: 1rem;
+}

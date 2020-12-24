@@ -1,0 +1,45 @@
+.search {
+	max-width: 114rem;
+	margin: 3rem auto;
+	padding: 1rem;
+}
+
+.form {
+	display: flex;
+	flex-direction: row;
+}
+
+.input {
+	width: 100%;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border: 1px solid var(--mainBlack);
+}
+
+.input:focus {
+	border: 1px solid var(--mainBlue);
+}
+
+.submit,
+.clear {
+	width: 10%;
+	cursor: pointer;
+	font-size: 1.4rem;
+	border: none;
+	padding: 1rem;
+	margin-left: 1.5rem;
+	box-shadow: 0 0 6px var(--mainBlack);
+	border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 640px) {
+	.form {
+		flex-direction: column;
+	}
+	.submit,
+	.clear {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 1rem;
+	}
+}

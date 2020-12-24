@@ -1,0 +1,13 @@
+.error {
+	padding: 10rem;
+	background-color: var(--mainBlue);
+	color: var(--mainWhite);
+	height: 83.3vh;
+}
+
+.container {
+	max-width: 114rem;
+	margin: 9rem auto;
+	font-size: 5rem;
+	text-align: center;
+}

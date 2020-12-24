@@ -1,0 +1,23 @@
+.repos {
+	
+}
+
+.title {
+	font-size: 2.5rem;
+	padding: 1.5rem;
+	display: inline-block;
+	margin: 4rem auto 0 auto;
+	color: var(--mainBlack);
+	border: 1px solid var(--mainGray);
+	border-bottom: none;
+	transition: background-color 0.3s, color 0.3s;
+}
+.title:hover {
+	background-color: var(--mainBlack);
+	color: var(--mainWhite);
+}
+
+.repositories {
+	display: flex;
+	flex-direction: column;
+}

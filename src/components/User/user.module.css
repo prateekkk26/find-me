@@ -1,0 +1,197 @@
+.user {
+	padding: 1.3rem;
+}
+
+.container {
+	max-width: 114rem;
+	margin: 5rem auto;
+}
+
+.link {
+	text-decoration: none;
+	background-color: var(--mainBlack);
+	color: var(--mainWhite);
+	font-size: 1.5rem;
+	padding: 1rem;
+	display: inline-block;
+	border-radius: 0.5rem;
+}
+
+.header {
+	font-size: 2.5rem;
+	padding: 1.5rem;
+	display: inline-block;
+	margin: 2rem auto 0 auto;
+	color: var(--mainBlack);
+	border: 1px solid var(--mainGray);
+	border-bottom: none;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.header:hover {
+	background-color: var(--mainBlack);
+	color: var(--mainWhite);
+}
+
+.userMain {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid var(--mainGray);
+	/*padding: 2rem;*/
+	margin-top: -0.3rem;
+	flex: auto;
+}
+
+.imageContainer {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	flex: auto;
+	max-width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.flexItem:first-child {
+	max-width: 30%;
+}
+
+.flexItem:last-child {
+	margin-left: 6rem;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	flex: auto;
+}
+
+.profile {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.githubLink {
+	text-decoration: none;
+	max-width: 100%;
+	text-align: center;
+	color: var(--mainWhite);
+	background-color: var(--mainBlue);
+	margin-top: 1.5rem;
+	padding: 1.2rem;
+	font-size: 2rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 6px var(--mainBlack);
+}
+
+.userData {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	/*margin-left: 6rem;*/
+	max-width: 100%;
+}
+
+.data {
+	font-size: 1.4rem;
+	padding: 0.7rem 1.5rem;
+	border-radius: 0.5rem;
+	margin-right: 1.5rem;
+	box-shadow: 0 0 6px var(--mainBlack);
+	line-height: 2rem;
+}
+
+.generalInfo {
+	/*margin-left: 6rem;*/
+	margin-top: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	flex: auto;
+}
+
+.infoItem {
+	padding: 1.4rem;
+	border: 1px solid var(--mainGray);
+	border-bottom: none;
+}
+
+.infoItem:last-child {
+	border-bottom: 1px solid var(--mainGray);
+}
+
+.infoItem h3,
+.infoItem p {
+	display: inline-block;
+}
+
+.infoItem h3 {
+	font-size: 1.6rem;
+}
+
+.infoItem p {
+	margin-left: 1rem;
+	font-size: 1.6rem;
+	max-width: 80%;
+	line-height: 2rem;
+}
+
+.infoItem:hover {
+	background-color: var(--mainGray);
+}
+
+.lastItem {
+	margin-right: 0;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1008px) {
+
+}
+
+@media screen and (min-width: 431px) and (max-width: 640px) {
+/*	.user {
+		padding: 1.3rem;
+	}*/
+	.githubLink {
+		width: 25rem;
+		margin: 1.5rem auto;
+	}
+	.userMain {
+		flex-direction: column;
+	}
+	.flexItem:first-child {
+		max-width: 100%;
+	}
+	.flexItem:last-child {
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.userData {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	/*.user{
+		padding: 1.3rem;
+	}*/
+	.profile {
+		margin: 0 auto;
+		width: 50%;
+	}
+	.githubLink {
+		width: 25rem;
+		margin: 1.5rem auto;
+	}
+	.userMain {
+		flex-direction: column;
+	}
+	.flexItem:first-child {
+		max-width: 100%;
+	}
+	.flexItem:last-child {
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.userData {
+		margin: 0 auto;
+	}
+}
